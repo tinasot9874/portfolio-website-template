@@ -7,6 +7,7 @@ spans.forEach(span => span.addEventListener('mouseout', function(e){
     span.classList.remove('animated', 'rubberBand')
 }))
 
+
 const htmlBar = document.querySelector('.bar-html')
 const cssBar = document.querySelector('.bar-css')
 const jsBar = document.querySelector('.bar-javascript')
