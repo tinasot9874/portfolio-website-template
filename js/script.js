@@ -7,18 +7,26 @@ spans.forEach(span => span.addEventListener('mouseout', function(e){
     span.classList.remove('animated', 'rubberBand')
 }))
 
+const nav = document.querySelectorAll('.animatefont li')
+nav.forEach(li => li.addEventListener('mouseover', function(e){
+    li.classList.add('animated', 'rubberBand')
+}))
+
+nav.forEach(li => li.addEventListener('mouseout', function(e){
+    li.classList.remove('animated', 'rubberBand')
+}))
+
 
 const htmlBar = document.querySelector('.bar-html')
 const cssBar = document.querySelector('.bar-css')
-const jsBar = document.querySelector('.bar-javascript')
-const phpBar = document.querySelector('.bar-php')
+const photoBar = document.querySelector('.bar-photoshop')
 
 var t1 = new TimelineLite()
 
 t1.fromTo(htmlBar, .75, {width: `calc(0% - 6px)`}, {width: `calc(50% - 6px)`, ease: Power4.easeOut})
   .fromTo(cssBar, .75, {width: `calc(0% - 6px)`}, {width: `calc(40% - 6px)`, ease: Power4.easeOut})
-  .fromTo(jsBar, .75, {width: `calc(0% - 6px)`}, {width: `calc(45% - 6px)`, ease: Power4.easeOut})
-  .fromTo(phpBar, .75, {width: `calc(0% - 6px)`}, {width: `calc(65% - 6px)`, ease: Power4.easeOut})
+  .fromTo(photoBar, .75, {width: `calc(0% - 6px)`}, {width: `calc(45% - 6px)`, ease: Power4.easeOut})
+
 
 const contoller = new ScrollMagic.Controller()
 const scene = new ScrollMagic.Scene({
