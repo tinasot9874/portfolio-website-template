@@ -4,10 +4,6 @@
   box-sizing: border-box;
   font-family: 'Dancing Script', cursive;
 }
-:root {
-  --animate-duration: 8000ms;
-  --animate-delay: 5s;
-}
 
 /*************************** Animation for Text************************/
 
@@ -426,6 +422,7 @@ span.m-left{
 }
 .skills p {
   font-size: 1.5rem;
+  color: #707070;
 }
 .skills h1,
 .contact h1 {
@@ -509,7 +506,7 @@ div[class^='bar-']{
 div[class^='category-']{
   margin-top: 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px,1fr));
   grid-gap:20px;
 }
 
@@ -525,7 +522,7 @@ button.active {
  color: #fff;
 }
 .work a img {
-  width: 350px;
+  width: 250px;
   justify-self: center;
 }
 
@@ -535,7 +532,7 @@ div.hideCategory{
 }
 
 .showCategory{
-  display: none;
+  display: block;
 }
 
 .contact{
@@ -611,7 +608,7 @@ section .container{
 section .container .contactinfo {
   position: absolute;
   top: 40px;
-  width: 350px;
+  width: 450px;
   height: calc(100% - 80px);
   background: #0f3959;
   z-index: 1;
@@ -705,8 +702,8 @@ section .container .contactinfo .info li span:nth-child(2) {
    position: absolute;
    padding: 70px 50px;
    background: #fff;
-   margin-left: 200px;
-   padding-left: 200px;
+   margin-left: 250px;
+   padding-left: 250px;
    width: calc(100% - 300px);
    height: 100%;
    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
@@ -802,7 +799,20 @@ section .container .contactForm .formBox .inputBox input[type="submit"]:hover {
 
 
 
-
+/********************* Button Scroll to Top ****************/
+#topBtn {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  background: #3f3e3e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
 
 
 
